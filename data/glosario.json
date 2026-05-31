@@ -1,0 +1,72 @@
+[
+  {
+    "id": "pacha",
+    "termino": "Pacha",
+    "lengua": "Quechua/Aymara",
+    "significado": "Espacio-tiempo-materia como tejido indisoluble. No es 'mundo' ni 'tierra'.",
+    "categoria": "ontologia"
+  },
+  {
+    "id": "yanantin",
+    "termino": "Yanantin",
+    "lengua": "Quechua",
+    "significado": "Complementariedad de opuestos que coexisten sin fundirse. No es dialéctica hegeliana.",
+    "categoria": "logica"
+  },
+  {
+    "id": "ayni",
+    "termino": "Ayni",
+    "lengua": "Quechua/Aymara",
+    "significado": "Reciprocidad cósmica — dar, recibir, devolver. Principio ético y económico fundamental.",
+    "categoria": "etica"
+  },
+  {
+    "id": "qhapaq-nan",
+    "termino": "Qhapaq Ñan",
+    "lengua": "Quechua",
+    "significado": "Camino de los justos. Red vial y espiritual de 30,000-40,000 km que conectaba el Tawantinsuyu.",
+    "categoria": "politica"
+  },
+  {
+    "id": "sumak-kawsay",
+    "termino": "Sumak Kawsay",
+    "lengua": "Quechua",
+    "significado": "Vida en plenitud, vida excelente. Horizonte ético-político. No es 'desarrollo' ni 'progreso'.",
+    "categoria": "horizonte"
+  },
+  {
+    "id": "abya-yala",
+    "termino": "Abya Yala",
+    "lengua": "Guna (Dulegaya)",
+    "significado": "Tierra en plena madurez, tierra de sangre vital. Nombre del continente antes de 'América'.",
+    "categoria": "territorio"
+  },
+  {
+    "id": "tawantinsuyu",
+    "termino": "Tawantinsuyu",
+    "lengua": "Quechua",
+    "significado": "Las cuatro regiones unidas. Nombre del imperio incaico y de la región andina.",
+    "categoria": "territorio"
+  },
+  {
+    "id": "cosmovivencia",
+    "termino": "Cosmovivencia",
+    "lengua": "Español (neologismo andino)",
+    "significado": "Vivir el cosmos desde dentro. No es 'cosmovisión' (observar desde fuera). Acuñado por Delfor Wankaymura.",
+    "categoria": "epistemologia"
+  },
+  {
+    "id": "chixi",
+    "termino": "Ch'ixi",
+    "lengua": "Aymara",
+    "significado": "Lo jaspeado, lo manchado. Opuestos que coexisten sin mezclarse. Potencia, no defecto. Concepto de Silvia Rivera Cusicanqui.",
+    "categoria": "epistemologia"
+  },
+  {
+    "id": "pachamama",
+    "termino": "Pachamama",
+    "lengua": "Quechua/Aymara",
+    "significado": "Madre del tejido cósmico. No es 'diosa tierra' — es la Pacha en su aspecto generador.",
+    "categoria": "ontologia"
+  }
+]
