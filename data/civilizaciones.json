@@ -1,0 +1,121 @@
+[
+  {
+    "id": "caral",
+    "nombre": "Caral-Supe",
+    "periodo": "3000 a.C. - 1800 a.C.",
+    "region": "Costa Central, Perú",
+    "coordenadas": {
+      "lat": -10.9000,
+      "lon": -77.5200
+    },
+    "descripcion": "La civilización más antigua confirmada en Abya Yala y una de las seis cunas civilizatorias autónomas del mundo. Se desarrolló sin el uso de cerámica, sin metales y, de manera excepcional, sin evidencia arqueológica de guerra.",
+    "logros": [
+      "Plazas circulares hundidas y pirámides monumentales",
+      "Tecnología sísmica mediante redes de fibra (shicras)",
+      "Uso de quipus para registro numérico y textil",
+      "Modelos complejos de irrigación fluvial en desiertos"
+    ]
+  },
+  {
+    "id": "chavin",
+    "nombre": "Chavín de Huántar",
+    "periodo": "1200 a.C. - 400 a.C.",
+    "region": "Sierra de Áncash, Perú",
+    "coordenadas": {
+      "lat": -9.5940,
+      "lon": -77.1778
+    },
+    "descripcion": "El primer gran horizonte cultural pan-andino. Funcionó como un centro ceremonial de síntesis ecológica (costa-sierra-selva) que unificó artísticamente la iconografía del felino, el ave y la serpiente.",
+    "logros": [
+      "Máquina psicoacústica con canales de agua resonantes",
+      "Arquitectura monumental en galerías subterráneas",
+      "Escultura lítica de precisión extrema (El Lanzón, Estela Raimondi)",
+      "Sistemas de drenaje hidráulico de alta complejidad"
+    ]
+  },
+  {
+    "id": "tiwanaku",
+    "nombre": "Tiwanaku",
+    "periodo": "400 a.C. - 1100 d.C.",
+    "region": "Altiplano boliviano, Lago Titicaca",
+    "coordenadas": {
+      "lat": -16.5547,
+      "lon": -68.6728
+    },
+    "descripcion": "El gran centro espiritual y político del altiplano, construido a 3,840 metros sobre el nivel del mar. Su sofisticado conocimiento astronómico y arquitectónico sentó las bases para el posterior desarrollo incaico.",
+    "logros": [
+      "Campos de cultivo elevados (Suka Kollus) contra heladas",
+      "Precisión astronómica solar en el templo Kalasasaya",
+      "Ingeniería megalítica en Pumapunku (bloques de hasta 131 toneladas)",
+      "Calendario cíclico solar grabado en la Puerta del Sol"
+    ]
+  },
+  {
+    "id": "olmeca",
+    "nombre": "Cultura Olmeca",
+    "periodo": "1500 a.C. - 400 a.C.",
+    "region": "Veracruz y Tabasco, México",
+    "coordenadas": {
+      "lat": 17.9167,
+      "lon": -94.0167
+    },
+    "descripcion": "La cultura madre de Mesoamérica. Establecieron las primeras ciudades ceremoniales y la iconografía cosmológica que heredarían mayas y mexicas.",
+    "logros": [
+      "Escultura monumental de cabezas colosales de basalto",
+      "Uso de asfalto y hule para impermeabilización y juegos",
+      "Desarrollo temprano de glifos astronómicos y numéricos",
+      "Planificación urbana basada en ejes astronómicos"
+    ]
+  },
+  {
+    "id": "maya",
+    "nombre": "Civilización Maya",
+    "periodo": "2000 a.C. - 1500 d.C.",
+    "region": "Sur de México, Guatemala, Belice, Honduras",
+    "coordenadas": {
+      "lat": 17.2220,
+      "lon": -89.6230
+    },
+    "descripcion": "Una de las civilizaciones más célebres de Abya Yala, conocida por su sofisticado sistema de escritura jeroglífica (el único completamente desarrollado en América), su astronomía matemática y su arquitectura monumental en la selva.",
+    "logros": [
+      "El calendario solar y lunar más preciso de la antigüedad",
+      "Uso del cero en matemáticas posicionales antes que en Europa",
+      "Complejo sistema de escritura jeroglífica y códices",
+      "Arquitectura de pirámides templos (Tikal, Palenque, Copán)"
+    ]
+  },
+  {
+    "id": "mexica",
+    "nombre": "Imperio Mexica (Azteca)",
+    "periodo": "1325 d.C. - 1521 d.C.",
+    "region": "Valle de México, Tenochtitlan",
+    "coordenadas": {
+      "lat": 19.4326,
+      "lon": -99.1332
+    },
+    "descripcion": "El mayor imperio militar y político de Mesoamérica. Fundaron Tenochtitlan sobre un lago, convirtiéndola en una de las urbes más grandes del planeta en el siglo XV (200,000+ habitantes), caracterizada por su ingeniería lacustre y organización.",
+    "logros": [
+      "Cultivos hidropónicos flotantes sobre canales (Chinampas)",
+      "Sistema de acueductos gemelos y diques de control de inundaciones",
+      "Medicina herbolaria altamente sistematizada (Códice Badiano)",
+      "Complejo sistema tributario y mercantil pan-mesoamericano"
+    ]
+  },
+  {
+    "id": "inca",
+    "nombre": "Imperio Inca (Tawantinsuyu)",
+    "periodo": "1438 d.C. - 1533 d.C.",
+    "region": "Andes (Perú, Bolivia, Ecuador, Chile, Argentina)",
+    "coordenadas": {
+      "lat": -13.5226,
+      "lon": -71.9673
+    },
+    "descripcion": "El Estado más grande de la América precolombina. Su territorio se extendía por más de 2 millones de km² conectado por la red de caminos del Qhapaq Ñan. Organizó la producción a gran escala basándose en la reciprocidad de tierras y recursos sin mercados de moneda.",
+    "logros": [
+      "Red vial del Qhapaq Ñan de 40,000 kilómetros con puentes colgantes",
+      "Ingeniería sísmica lítica con encajes perfectos y sin mortero",
+      "Sistemas de andenería agrícola (terrazas) con microclimas térmicos",
+      "Uso del Quipu como base administrativa y contable a gran escala"
+    ]
+  }
+]

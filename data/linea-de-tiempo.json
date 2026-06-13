@@ -1,0 +1,80 @@
+[
+  {
+    "era": "Era de Caral",
+    "periodo": "3700 a.C. - 1200 a.C.",
+    "periodoESB": "Año 0 - 2500 E.S.B.",
+    "titulo": "El Amanecer Monumental Sin Guerra",
+    "descripcion": "Inicio de la arquitectura monumental y organización compleja en Abya Yala (Sechín Bajo, Watson Brake y Caral-Supe). Emergencia de centros urbanos autónomos y sistemas agrícolas de irrigación sin evidencia de fortificaciones ni violencia armada organizada.",
+    "sucesos": [
+      "~3700 a.C.: Primer edificio ceremonial monumental en Sechín Bajo (Casma, Perú).",
+      "~3500 a.C.: Complejo de montículos en Watson Brake (Luisiana, EE.UU.).",
+      "~3000 a.C.: Surgimiento de la ciudad sagrada de Caral-Supe (Costa central, Perú).",
+      "~2000 a.C.: Domesticación intensiva del maíz y consolidación de la textilería de algodón."
+    ]
+  },
+  {
+    "era": "Era de Chavín",
+    "periodo": "1200 a.C. - 400 a.C.",
+    "periodoESB": "2500 - 3300 E.S.B.",
+    "titulo": "El Primer Horizonte Cultural",
+    "descripcion": "Sintesis e integración de conocimientos ecológicos y religiosos entre costa, sierra y selva. Auge de la metalurgia, la escultura lítica ceremonial y la ingeniería psicoacústica a gran escala en Chavín de Huántar. En Mesoamérica, surge la cultura Olmeca.",
+    "sucesos": [
+      "~1500 a.C.: Fundación de San Lorenzo, primer centro civilizatorio Olmeca.",
+      "~1200 a.C.: Construcción del Templo Viejo de Chavín de Huántar.",
+      "~900 a.C.: Apogeo de La Venta (Olmeca), con construcción de la pirámide de tierra más grande.",
+      "~700 a.C.: Templo Nuevo de Chavín y consolidación del culto del jaguar."
+    ]
+  },
+  {
+    "era": "Era de los Imperios",
+    "periodo": "400 a.C. - 1100 d.C.",
+    "periodoESB": "3300 - 4800 E.S.B.",
+    "titulo": "La Edad Dorada de la Ciencia y la Estructura",
+    "descripcion": "Mientras Europa transitaba por la 'Edad Media' tras el colapso de Roma, en Abya Yala florecen ciudades e imperios altamente estructurados: Tiwanaku, Wari, Nazca, Moche y el Periodo Clásico Maya. Se desarrolla la escritura compleja, la ingeniería megalítica y matemáticas avanzadas con el uso del cero.",
+    "sucesos": [
+      "~100 d.C.: Fundación y primeras construcciones megalíticas en Tiwanaku.",
+      "~250 d.C.: Inicio del Clásico Maya y florecimiento de grandes urbes selváticas como Tikal.",
+      "~500 d.C.: Apogeo del Imperio Wari en Perú, con la primera red de caminos andinos.",
+      "~800 d.C.: Sistema agrícola de Suka Kollus (campos elevados) en el altiplano de Tiwanaku."
+    ]
+  },
+  {
+    "era": "Era de la Expansión",
+    "periodo": "1100 d.C. - 1533 d.C.",
+    "periodoESB": "4800 - 5233 E.S.B.",
+    "titulo": "Los Grandes Reinos e Imperios Continentales",
+    "descripcion": "Periodo de expansión política y militar que consolida los reinos tardíos: el Imperio Chimú, el Imperio Mexica (Azteca) en Mesoamérica, y el Tawantinsuyu (Inca) que integró 2 millones de km² bajo una administración sin mercado y una infraestructura de 40,000 km de caminos (Qhapaq Ñan).",
+    "sucesos": [
+      "1325 d.C.: Fundación de México-Tenochtitlan sobre el lago Texcoco.",
+      "1438 d.C.: Ascenso de Pachacútec e inicio de la expansión continental del Tawantinsuyu.",
+      "1470 d.C.: Construcción de Machu Picchu como finca real y observatorio astronómico.",
+      "1500 d.C.: Tenochtitlan y Cusco son de las ciudades más habitadas del planeta."
+    ]
+  },
+  {
+    "era": "Era del Epistemicidio",
+    "periodo": "1533 d.C. - 2008 d.C.",
+    "periodoESB": "5233 - 5708 E.S.B.",
+    "titulo": "La Larga Noche del Saqueo y Resistencia",
+    "descripcion": "La irrupción colonial española, portuguesa y anglosajona. Imposición del relato histórico eurocéntrico mediante la quema de códices, quipus y el silenciamiento de las lenguas indígenas. Pero el conocimiento andino sobrevive escondido en ritos, redes de ayni, saberes agrícolas y resistencia armada y conceptual.",
+    "sucesos": [
+      "1533 d.C.: Captura de Atahualpa y caída del Cusco; inicio de la invasión andina.",
+      "1572 d.C.: Ejecución de Túpac Amaru I en Cusco; fin de la resistencia de Vilcabamba.",
+      "1780 d.C.: Rebelión continental de Túpac Amaru II y Micaela Bastidas contra el imperio español.",
+      "1992 d.C.: Movilización continental del 'Quinto Centenario de Resistencia Indígena'."
+    ]
+  },
+  {
+    "era": "Era del Despertar",
+    "periodo": "2008 d.C. - presente",
+    "periodoESB": "5708 E.S.B. - presente",
+    "titulo": "El Retorno del Centro y la Transmodernidad",
+    "descripcion": "La filosofía y política andina resurgen con fuerza institucional. El concepto del Sumak Kawsay (Buen Vivir) ingresa a las constituciones políticas. Millones de personas de Abya Yala lideran el reclamo de soberanía espacial, temporal y digital, planteando un diálogo Sur-Sur y el inicio de la Transmodernidad.",
+    "sucesos": [
+      "2008 d.C.: El Sumak Kawsay es incorporado en la Constitución de la República del Ecuador.",
+      "2009 d.C.: El Vivir Bien se constitucionaliza en el Estado Plurinacional de Bolivia.",
+      "2020 d.C.: Proyectos digitales descentralizados y autónomos de Abya Yala inician su despliegue.",
+      "2026 d.C.: Sincronización del Meridiano Taypiqala y Calendario de Sechín Bajo (Año 5726 E.S.B.)."
+    ]
+  }
+]

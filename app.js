@@ -461,6 +461,91 @@ function initBookRoadmap() {
 }
 
 // ==========================================================================
+// 6.5. ORBITAL TELEMETRY LOGIC (Soberanía Espacial)
+// ==========================================================================
+
+const TIWANAKU_LAT = -16.5547;
+const TIWANAKU_LON = -68.6728;
+
+function haversineDistance(lat1, lon1, lat2, lon2) {
+    const R = 6371; // Earth radius in km
+    const dLat = (lat2 - lat1) * Math.PI / 180;
+    const dLon = (lon2 - lon1) * Math.PI / 180;
+    const a = 
+        Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+        Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * 
+        Math.sin(dLon / 2) * Math.sin(dLon / 2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    return Math.round(R * c * 100) / 100;
+}
+
+function convertToTaypiqalaLon(gLon) {
+    let tLon = gLon - TIWANAKU_LON;
+    if (tLon > 180) tLon -= 360;
+    else if (tLon < -180) tLon += 360;
+    return Math.round(tLon * 10000) / 10000;
+}
+
+async function updateSatelliteTelemetry() {
+    // Only update if tab-mapa is active to conserve public API limits
+    const mapaTab = document.getElementById("tab-mapa");
+    if (!mapaTab || !mapaTab.classList.contains("active")) return;
+
+    const nameEl = document.getElementById("sat-name");
+    const distEl = document.getElementById("sat-dist");
+    const coordsEl = document.getElementById("sat-coords");
+    const speedEl = document.getElementById("sat-speed");
+    const statusEl = document.getElementById("sat-status");
+
+    try {
+        const response = await fetch("https://api.wheretheiss.at/v1/satellites/25544");
+        if (!response.ok) throw new Error("API rate limited");
+        
+        const data = await response.json();
+        
+        const lat = parseFloat(data.latitude);
+        const lon = parseFloat(data.longitude);
+        const speed = parseFloat(data.velocity);
+        const distance = haversineDistance(TIWANAKU_LAT, TIWANAKU_LON, lat, lon);
+        const tLon = convertToTaypiqalaLon(lon);
+        
+        // Andean space border definition: lat [0, -37], lon [-50, -82]
+        const isOverTawantinsuyu = lat <= 0 && lat >= -37 && lon <= -50 && lon >= -82;
+        
+        if (nameEl) nameEl.textContent = "ISS (Estación Espacial Internacional)";
+        if (distEl) distEl.textContent = `${distance.toLocaleString()} km`;
+        if (coordsEl) coordsEl.textContent = `${Math.round(lat*10000)/10000}° N, ${tLon}° T (Taypiqala)`;
+        if (speedEl) speedEl.textContent = `${Math.round(speed).toLocaleString()} km/h`;
+        if (statusEl) {
+            statusEl.textContent = isOverTawantinsuyu ? "SOBRE TAWANTINSUYU" : "FUERA DE TAWANTINSUYU";
+            statusEl.style.color = isOverTawantinsuyu ? "var(--accent-gold)" : "var(--accent-fire)";
+            statusEl.style.borderColor = isOverTawantinsuyu ? "rgba(240, 192, 64, 0.3)" : "rgba(224, 96, 48, 0.15)";
+            statusEl.style.backgroundColor = isOverTawantinsuyu ? "rgba(240, 192, 64, 0.06)" : "rgba(224, 96, 48, 0.06)";
+        }
+    } catch (error) {
+        // Fallback calculations in case of offline or API block
+        const timeFactor = Date.now() / 150000;
+        const fakeLat = Math.sin(timeFactor) * 51.64;
+        const fakeLon = ((timeFactor * 180) % 360) - 180;
+        
+        const distance = haversineDistance(TIWANAKU_LAT, TIWANAKU_LON, fakeLat, fakeLon);
+        const tLon = convertToTaypiqalaLon(fakeLon);
+        const isOverTawantinsuyu = fakeLat <= 0 && fakeLat >= -37 && fakeLon <= -50 && fakeLon >= -82;
+        
+        if (nameEl) nameEl.textContent = "ISS (Sincronización simulada)";
+        if (distEl) distEl.textContent = `${distance.toLocaleString()} km`;
+        if (coordsEl) coordsEl.textContent = `${Math.round(fakeLat*10000)/10000}° N, ${tLon}° T (Taypiqala)`;
+        if (speedEl) speedEl.textContent = "27,600 km/h";
+        if (statusEl) {
+            statusEl.textContent = isOverTawantinsuyu ? "SOBRE TAWANTINSUYU" : "FUERA DE TAWANTINSUYU";
+            statusEl.style.color = isOverTawantinsuyu ? "var(--accent-gold)" : "var(--accent-fire)";
+            statusEl.style.borderColor = isOverTawantinsuyu ? "rgba(240, 192, 64, 0.3)" : "rgba(224, 96, 48, 0.15)";
+            statusEl.style.backgroundColor = isOverTawantinsuyu ? "rgba(240, 192, 64, 0.06)" : "rgba(224, 96, 48, 0.06)";
+        }
+    }
+}
+
+// ==========================================================================
 // 7. INITIALIZATION
 // ==========================================================================
 
@@ -469,12 +554,16 @@ window.onload = () => {
     updateClock();
     setInterval(updateClock, 1000);
     
-    // 2. Tab Initializations
+    // 2. Orbital Telemetry Setup
+    updateSatelliteTelemetry();
+    setInterval(updateSatelliteTelemetry, 5000);
+    
+    // 3. Tab Initializations
     initReports();
     fetchGlosario();
     initBookRoadmap();
     
-    // 3. Setup default dynamic height for split view
+    // 4. Setup default dynamic height for split view
     adjustLayoutHeight();
     window.onresize = adjustLayoutHeight;
 };
